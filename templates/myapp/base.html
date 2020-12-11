@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% block title%}
+  <title>base page</title>
+    
+  {% endblock  %}
+</head>
+{% block body-block %}
+<body>
+  <div class="container">
+    <ul class="nav">
+      <li class="nav-item">
+        <a href="nav-link" href="{% url ' name'%}">name </a>
+
+  {% block content %}
+  <h1>WELCOME TO BASE PAGE </h1>
+  <h2>your name is {{name}} and age is {{age}}</h2>
+  {% endblock  %}
+
+</li>
+</ul>
+</div>
+</body>
+{% endblock  %}
+
+</html> 

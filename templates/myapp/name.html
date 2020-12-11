@@ -1,0 +1,17 @@
+{% extends "myapp/base.html" %}
+
+{% block title%}
+  <title>name  page</title>
+    
+  {% endblock  %}
+
+  {% block body-block %}
+<body>
+  {% block content %}
+  <h1>WELCOME TO BASE PAGE </h1>
+  <h2>your name is {{name}} and age is less {{age}}</h2>
+  <a href="{% url 'wel' %}">go to wel</a>
+  {% endblock  %}
+  
+</body>
+{% endblock  %}
