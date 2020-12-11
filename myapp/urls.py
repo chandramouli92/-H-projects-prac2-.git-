@@ -6,4 +6,5 @@ urlpatterns = [
     path('base',views.base,name="base"),
     path('name',views.name,name="name"),
     path('wel',views.wel,name="wel"),
+    path('mouli',views.mouli,name="name"),
 ]

@@ -13,3 +13,5 @@ def name(request):
 
 def wel(request):
     return render(request,"myapp/wel.html")
+def mouli(request):
+    return render(request ,"myapp/mouli.html")
